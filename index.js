@@ -28,15 +28,15 @@ img2.setAttribute("src", randomImageSource2);
 var player1 = document.querySelectorAll("h2")[0];
 var player2 = document.querySelectorAll("h2")[1];
     
-if (randomNumber > randomNumber2) {
-    player1.innerHTML = 'PLAYER 1 WINS! <img class="emoji" src="./images/win.png" alt="win Image">';
-    player2.innerHTML = 'PLAYER 2 LOSES <img class="emoji" src="./images/cry.png" alt="win Image">';
-} else if (randomNumber < randomNumber2) {
-    player1.innerHTML = 'PLAYER 1 LOSES <img class="emoji" src="./images/cry.png" alt="win Image">';
-    player2.innerHTML = 'PLAYER 2 WINS! <img class="emoji" src="./images/win.png" alt="win Image">';
-} else {
-    player1.innerHTML = 'DRAWS!';
-    player2.innerHTML = 'TRY AGAIN';
+if (randomNumber1 > randomNumber2) {
+    player1.innerHTML = 'PLAYER 1 <span style="color: red;">WINS!</span>';
+    player2.innerHTML = "PLAYER 2 LOSES";
+} else if (randomNumber1 < randomNumber2) {
+    player1.innerHTML = "PLAYER 1 LOSES";
+    player2.innerHTML = 'PLAYER 2 <span style="color: red;">WINS!</span>';
+} else if (randomNumber1 === randomNumber2) {
+    player1.innerHTML = '<span style="color: red;">DRAWS!</span>';
+    player2.innerHTML = "TRY AGAIN";
 }
 
 }
