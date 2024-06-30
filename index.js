@@ -11,8 +11,8 @@ function main() {
 function roll() {
 
 //first dice
-var randomNumber = Math.floor(Math.random() * 6) + 1; //random 1-6
-var randomDiceImage = "dice" + randomNumber + ".png"; //dice.png 1-6
+var randomNumber1 = Math.floor(Math.random() * 6) + 1; //random 1-6
+var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice.png 1-6
 var randomImageSource = "images/" + randomDiceImage; //change img src
 var img1 = document.querySelectorAll("img")[0];
 img1.setAttribute("src", randomImageSource);
@@ -39,6 +39,6 @@ if (randomNumber1 > randomNumber2) {
     player2.innerHTML = "TRY AGAIN";
 }
 
-}
 
+}
     
